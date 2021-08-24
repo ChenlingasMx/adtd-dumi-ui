@@ -1,1 +1,3 @@
-export { default as CardPro } from './CardPro';
+import CardPro from './CardPro';
+
+export { CardPro };
