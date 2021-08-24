@@ -6,12 +6,13 @@ export default defineConfig({
   title: repo,
   favicon: `/${repo}/images/59959718.jpeg`,
   logo: `/${repo}/images/59959718.jpeg`,
-  outputPath: 'docs-dist',
+  outputPath: 'dist',
   mode: 'doc',
   hash: true,
   // Because of using GitHub Pages
   base: `/${repo}/`,
   publicPath: `/${repo}/`,
+  exportStatic: {}, // 将所有路由输出为 HTML 目录结构，以免刷新页面时 404
   navs: [
     null,
     {
