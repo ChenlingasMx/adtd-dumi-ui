@@ -9,6 +9,9 @@ export default defineConfig({
   outputPath: 'dist',
   mode: 'doc',
   hash: true,
+  history: {
+    type: 'hash',
+  },
   // Because of using GitHub Pages
   base: `/${repo}/`,
   publicPath: `/${repo}/`,
