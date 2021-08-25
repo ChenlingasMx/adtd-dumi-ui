@@ -12,7 +12,7 @@ export default defineConfig({
       ? '/antd-dumi-ui/images/59959718.jpeg'
       : './images/59959718.jpeg',
   outputPath: 'docs-dist',
-  mode: 'doc',
+  mode: 'site',
   hash: true,
   history: {
     type: 'hash',
@@ -28,6 +28,24 @@ export default defineConfig({
       path: 'https://github.com/umijs/dumi-template',
     },
   ],
+  menus: {
+    '/components': [
+      {
+        title: '通用',
+        children: ['component/buttonGroup'],
+      },
+      {
+        title: '数据展示',
+        children: ['component/cardPro'],
+      },
+    ],
+    '/guide': [
+      {
+        title: '开发指南',
+        children: ['guide'],
+      },
+    ],
+  },
   extraBabelPlugins: [
     [
       'babel-plugin-import',
