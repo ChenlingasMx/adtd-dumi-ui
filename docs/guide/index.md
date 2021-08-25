@@ -10,7 +10,7 @@ nav:
 
 ## 分支管理
 
-该项目长期维护两个分支 `main` 和 `dev`。如果你要提一个 pull request，那么请基于 `dev` 分支来做，我会不定时合并 development 到 master，并发布版本与同步到 npm。
+该项目长期维护两个分支 `main` 和 `dev`。如果你要提一个 pull request，那么请基于 `dev` 分支来做，我会不定时合并 `dev` 到 `main` npm。
 
 ## 第一次贡献
 
