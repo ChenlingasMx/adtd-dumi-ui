@@ -1,5 +1,5 @@
 import React from 'react';
-import { CardPro } from 'antd-dumi-ui';
+import { CardPro } from 'dumip';
 import { Image } from 'antd';
 
 export default () => {
