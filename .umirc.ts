@@ -38,6 +38,10 @@ export default defineConfig({
         title: '数据展示',
         children: ['component/cardPro'],
       },
+      {
+        title: '表单',
+        children: ['component/quickForm'],
+      },
     ],
     '/guide': [
       {
