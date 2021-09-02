@@ -18,6 +18,8 @@ nav:
 
 ## API
 
+组件继承 antd [`Upload`](https://ant.design/components/upload-cn/#header)
+
 ```ts
 interface ItemsProps<T> {
   defaultcolspan?: any;
