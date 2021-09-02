@@ -9,27 +9,26 @@ import { MenuInfo } from 'rc-menu/lib/interface';
 const ButtonGroup = Button.Group;
 
 export interface ButtonGroupProProps {
-  button: Array<any>;
+  button: Array<MenusOptionProps>;
   className?: string;
-}
-export interface MenusProps extends Omit<MenuInfo, 'item'> {
-  /** 禁用 */
-  disabled?: boolean;
-  label?: string | React.ReactNode;
-  item: any;
-  [k: string]: any;
 }
 export interface MenusOptionProps
   extends Omit<ButtonProps, 'type'>,
     ButtonGroupProps {
   label?: string | React.ReactNode;
-  option?: Array<MenusOptionProps>;
   menu?: Array<MenusProps>;
   key?: number;
   ButtonandDropdown?: string | number;
   type?: ButtonType;
   render?: (...arg: any) => React.ReactNode;
   badge?: number | string;
+}
+interface MenusProps extends Omit<MenuInfo, 'item'> {
+  /** 禁用 */
+  disabled?: boolean;
+  label?: string | React.ReactNode;
+  item: any;
+  [k: string]: any;
 }
 
 const ButtonGroupPro = (props: ButtonGroupProProps) => {

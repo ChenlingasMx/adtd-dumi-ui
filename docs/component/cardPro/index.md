@@ -20,7 +20,9 @@ nav:
 
 组件继承 antd [`Card`](https://ant.design/components/card-cn/#header)
 
-| 参数      | 说明       | 类型            | 默认值 |
-| --------- | ---------- | --------------- | ------ |
-| children  | 渲染的内容 | React.ReactNode | -      |
-| className | 样式       | string          | -      |
+```ts
+interface CardProProps extends CardProps {
+  children?: React.ReactNode;
+  className?: string;
+}
+```
