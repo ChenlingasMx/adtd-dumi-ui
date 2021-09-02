@@ -15,7 +15,6 @@ export interface ButtonGroupProProps {
 export interface MenusProps extends Omit<MenuInfo, 'item'> {
   /** 禁用 */
   disabled?: boolean;
-  /**   */
   label?: string | React.ReactNode;
   item: any;
   [k: string]: any;

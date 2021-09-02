@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import { Card, CardProps } from 'antd';
 import './index.css';
 
-interface CardProProps extends CardProps {
+export interface CardProProps extends CardProps {
   children?: React.ReactNode;
   className?: string;
 }

@@ -20,21 +20,24 @@ nav:
 
 ```ts
 interface ItemsProps<T> {
-  defaultcolspan: any;
+  defaultcolspan?: any;
   /** 表单元素标题 */
   label: string;
   /** 表单名称 antd from 组件 getFieldDecorator 第一个参数 */
   name: string;
   /** 表单初始值 */
-  initialValue: string | any;
+  initialValue?: string | any;
   /** 表单是否独占一行  */
-  full: boolean;
+  full?: boolean;
   /** 表单隐藏  */
-  hideInForm: boolean;
+  hideInForm?: boolean;
   /** input select 等表单组件属性集合 具体参考 antd  */
-  attributes: T | any;
+  attributes?: T | any;
   type?: string | undefined;
-  options?: Array<{ label: string; value: string | number }> | [] | undefined;
+  options?:
+    | Array<{ label: string | number | undefined; value: string | number }>
+    | []
+    | undefined;
   span?: number;
 }
 

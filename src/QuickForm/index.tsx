@@ -22,6 +22,7 @@ import {
   FormInstance,
 } from 'antd';
 import CardPro from '../CardPro';
+import UploadGrid from '../UploadGrid';
 import zhCN from 'antd/es/locale/zh_CN';
 import 'moment/locale/zh-cn';
 import locale from 'antd/es/date-picker/locale/zh_CN';
@@ -55,21 +56,24 @@ const { RangePicker, MonthPicker } = DatePicker;
 declare type FormLayout = 'horizontal' | 'inline' | 'vertical';
 
 interface ItemsProps<T> {
-  defaultcolspan: any;
+  defaultcolspan?: any;
   /** 表单元素标题 */
   label: string;
   /** 表单名称 antd from 组件 getFieldDecorator 第一个参数 */
   name: string;
   /** 表单初始值 */
-  initialValue: string | any;
+  initialValue?: string | any;
   /** 表单是否独占一行  */
-  full: boolean;
+  full?: boolean;
   /** 表单隐藏  */
-  hideInForm: boolean;
+  hideInForm?: boolean;
   /** input select 等表单组件属性集合 具体参考 antd  */
-  attributes: T | any;
+  attributes?: T | any;
   type?: string | undefined;
-  options?: Array<{ label: string; value: string | number }> | [] | undefined;
+  options?:
+    | Array<{ label: string | number | undefined; value: string | number }>
+    | []
+    | undefined;
   span?: number;
 }
 
@@ -452,6 +456,10 @@ const QuickForm: QuickFormComponent = (props, ref) => {
                   <Checkbox {...attributes}>
                     {label || item.checkboxLable}
                   </Checkbox>
+                );
+              } else if (type === 'UploadGrid' || type === 'uploadGrid') {
+                return (
+                  <UploadGrid {...attributes}>{uploadButtonDom()}</UploadGrid>
                 );
               } else if (type === 'autoComplete' || type === 'AutoComplete') {
                 return (
