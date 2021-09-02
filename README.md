@@ -3,10 +3,10 @@
 `antd-dumi-ui`，是一款基于 dumi，由 React + antd + TypeScript 开发的组件库 🎉。
 
 # Component
-[ButtonGroupPro](https://github.com/ChenlingasMx/dumip/blob/main/docs/component/buttonGroup/index.md)。
-[CardPro](https://github.com/ChenlingasMx/dumip/blob/main/docs/component/cardPro/index.md)。
-[QuickForm](https://github.com/ChenlingasMx/dumip/blob/main/docs/component/quickForm/index.md)。
-[UploadGrid](https://github.com/ChenlingasMx/dumip/blob/main/docs/component/uploadGrid/index.md)。
+[ButtonGroupPro](https://github.com/ChenlingasMx/dumip/blob/main/docs/component/buttonGroup/index.md)
+[CardPro](https://github.com/ChenlingasMx/dumip/blob/main/docs/component/cardPro/index.md)
+[QuickForm](https://github.com/ChenlingasMx/dumip/blob/main/docs/component/quickForm/index.md)
+[UploadGrid](https://github.com/ChenlingasMx/dumip/blob/main/docs/component/uploadGrid/index.md)
 
 # 参与贡献
 
