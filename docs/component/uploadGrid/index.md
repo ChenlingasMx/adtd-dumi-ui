@@ -18,7 +18,7 @@ nav:
 
 ### Props
 
-组件继承 [`antd Upload`](https:ant.design/components/upload-cn/#header)
+组件继承 [`antd Upload`](https:ant.design/components/form-cn/#header)
 
 ```ts
 export type Props = {
