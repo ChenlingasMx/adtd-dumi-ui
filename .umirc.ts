@@ -40,7 +40,11 @@ export default defineConfig({
       },
       {
         title: '表单',
-        children: ['component/uploadGrid', 'component/quickForm'],
+        children: [
+          'component/uploadGrid',
+          'component/quickForm',
+          'component/proForm',
+        ],
       },
     ],
     '/guide': [
